@@ -1,6 +1,6 @@
 import React from 'react';
 import tmdb from '../apis/tmdb';
-import './App.css';
+import '../App.css';
 import logo from '../images/logo.jpg';
 import Autosuggest from 'react-autosuggest';
 

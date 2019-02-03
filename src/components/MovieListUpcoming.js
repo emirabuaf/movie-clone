@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from './Image';
-import './App.css';
+import '../App.css';
 
 const MovieList = (props) => {
   const movies = props.movies

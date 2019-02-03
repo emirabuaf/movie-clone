@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 class Image extends React.Component{
 
@@ -6,7 +7,7 @@ class Image extends React.Component{
 
   return(
       <div>
-        <div>
+        <div className="item">
           <img className="img"
           src={`http://image.tmdb.org/t/p/w342${this.props.movie.backdrop_path}`} alt="moviebackdrop"/>
           <p className="title">{this.props.movie.original_title}</p>
