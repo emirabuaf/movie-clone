@@ -1,20 +1,17 @@
 import React from 'react';
 import '../App.css';
-import { Link,withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 class Image extends React.Component{
 
-selectMovie = () => {
-  this.props.setMovie(this.props.movie)
-}
+
 
   render(){
-    console.log(this.props.selectedMovie)
+    console.log(this.props.setMovie)
   return(
-    <Link to={"/" + this.props.movie.id}>
-      <div onClick={() => this.selectMovie()}>
+      <div onClick={(selectedMovie) => this.props.setMovie({selectedMovie})}>
         <div className="item">
           <img className="img"
           src={`http://image.tmdb.org/t/p/w342${this.props.movie.backdrop_path}`} alt="moviebackdrop"/>
@@ -22,7 +19,6 @@ selectMovie = () => {
           <p className="overview">{this.props.movie.overview}</p>
         </div>
       </div>
-    </Link>
   )}
 }
 

@@ -4,7 +4,7 @@ import tmdb from '../apis/tmdb';
 import MovieListUpcoming from './MovieListUpcoming';
 import MovieListPopular from './MovieListPopular';
 
-class App extends React.Component{
+class Home extends React.Component{
 
   state = {upcomingMovies:[],
           popularMovies:[]}
@@ -37,4 +37,4 @@ class App extends React.Component{
 }
 
 
-export default App;
+export default Home;
