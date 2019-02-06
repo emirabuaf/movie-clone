@@ -12,7 +12,11 @@
     "react-router-redux": "^4.0.8",
     "react-scripts": "2.1.1",
     "react-scroll-horizontal": "^1.5.1",
-    "redux": "^4.0.1"
+    "react-smooth": "^1.0.2",
+    "redux": "^4.0.1",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-react": "^0.85.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,8 @@
-import { SET_MOVIE } from '../actions';
+import { SET_MOVIE,FETCH_TRAILER } from '../actions';
 
 const initialState = {
-  selectedMovie:null
+  selectedMovie:null,
+  data:[]
 }
 
 export default function(state=initialState,action){
@@ -9,6 +10,10 @@ export default function(state=initialState,action){
     case SET_MOVIE:
       return{
         ...state,selectedMovie:action.payload
+      }
+    case FETCH_TRAILER:
+      return{
+        ...state,data:action.payload.data
       }
     default:
       return state;

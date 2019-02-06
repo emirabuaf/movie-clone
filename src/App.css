@@ -11,14 +11,16 @@ html,body{
   margin-top: 70px;
   margin-right:70px;
   width:1600px;
-  overflow: scroll;
+  overflow-y: scroll;
   z-index:9;
 }
 
 
 .content{
-  background:linear-gradient(to right,rgba(0,0,0,0.9),rgba(0,0,0,0.05)), url('./images/header-background.jpg');
+  background:linear-gradient(to right,rgba(0,0,0,0.9),rgba(0,0,0,0.05)), url('./images/narcos.jpg');
   height:100vh;
+  background-size: cover;
+
 }
 
 .upcoming{
@@ -207,4 +209,11 @@ width: 290px;
 .item:hover .overview{
   visibility:visible;
   transition-delay:0.5s;
+}
+
+.background-image {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

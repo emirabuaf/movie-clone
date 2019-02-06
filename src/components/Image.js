@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Link,withRouter } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
@@ -10,8 +10,8 @@ selectMovie = () => {
   this.props.setMovie(this.props.movie)
 }
 
+
   render(){
-    console.log(this.props.selectedMovie)
   return(
     <Link to={"/" + this.props.movie.id}>
       <div onClick={() => this.selectMovie()}>
