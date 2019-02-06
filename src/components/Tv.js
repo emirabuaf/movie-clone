@@ -12,7 +12,7 @@ class Tv extends React.Component{
 
   render(){
   return(
-    <Link to={"/" + this.props.show.id}>
+    <Link to={"tv/" + this.props.show.id}>
       <div onClick={() => this.setTvShow()}>
         <div className="item">
           <img className="img"

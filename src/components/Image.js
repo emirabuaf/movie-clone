@@ -13,7 +13,7 @@ selectMovie = () => {
 
   render(){
   return(
-    <Link to={"/" + this.props.movie.id}>
+    <Link to={"movie/" + this.props.movie.id}>
       <div onClick={() => this.selectMovie()}>
         <div className="item">
           <img className="img"

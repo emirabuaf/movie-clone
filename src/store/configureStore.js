@@ -1,5 +1,6 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import rootReducer from '../reducers';
+
 import promise from 'redux-promise';
 
 export default function configureStore(initialState) {

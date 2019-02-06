@@ -3,7 +3,6 @@ import tmdb from '../apis/tmdb';
 import '../App.css';
 import logo from '../images/logo.jpg';
 import Autosuggest from 'react-autosuggest';
-import {Link} from 'react-router-dom';
 import Header from './Header';
 
 
@@ -11,15 +10,16 @@ function getSuggestionValue(suggestion) {
 return suggestion.original_title;
 }
 
+
 function renderSuggestion(suggestion) {
   return (
-  <div>
-    <span className="search-title">{suggestion.original_title}</span>
-  <div>
-      <img className="search-logo"
-      src={`http://image.tmdb.org/t/p/w342${suggestion.poster_path}`} alt="search"/>
+    <div>
+      <span className="search-title">{suggestion.original_title}</span>
+    <div>
+        <img className="search-logo"
+        src={`http://image.tmdb.org/t/p/w342${suggestion.poster_path}`} alt="search"/>
+      </div>
     </div>
-  </div>
   );
 }
 

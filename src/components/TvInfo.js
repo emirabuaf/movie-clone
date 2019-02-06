@@ -23,7 +23,7 @@ class TvInfo extends React.Component{
 
   return(
       <div className="background-image" style={this.props.selectedTvShow.backdrop_path !== null ? backgroundImg : backwithPoster}>
-        <p style={{marginLeft:'47%',fontSize:25}}>{this.props.selectedTvShow.original_title}</p>
+        <p style={{marginLeft:'47%',fontSize:25}}>{this.props.selectedTvShow.name}</p>
         <img  style={{marginLeft: '20%'}}
         src={`http://image.tmdb.org/t/p/w780${this.props.selectedTvShow.backdrop_path}`} alt="showbackdrop"/>
       <div style={{float:'right',marginRight:45}}>
